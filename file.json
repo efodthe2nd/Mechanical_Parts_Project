@@ -1,0 +1,68 @@
+{
+    "BaseModel.3bb57a49-ed31-4994-875f-c43129cf2974": {
+        "id": "3bb57a49-ed31-4994-875f-c43129cf2974",
+        "created_at": "2023-08-16T01:45:36.876019",
+        "updated_at": "2023-08-16T01:45:36.876096",
+        "name": "My_Second_Model",
+        "my_number": 99,
+        "__class__": "BaseModel"
+    },
+    "BaseModel.3c28c817-c762-4ea3-8f83-4480f332498d": {
+        "id": "3c28c817-c762-4ea3-8f83-4480f332498d",
+        "created_at": "2023-08-16T01:46:43.315252",
+        "updated_at": "2023-08-16T01:46:43.315280",
+        "name": "My_Second_Model",
+        "my_number": 99,
+        "__class__": "BaseModel"
+    },
+    "BaseModel.10eaebed-0cec-49f9-b1f3-510b045b620d": {
+        "id": "10eaebed-0cec-49f9-b1f3-510b045b620d",
+        "created_at": "2023-08-16T01:47:42.055842",
+        "updated_at": "2023-08-16T01:47:42.056125",
+        "name": "My_Third_Model",
+        "my_number": 100,
+        "__class__": "BaseModel"
+    },
+    "Manufacturer.a520a6f8-1255-480a-85dc-669d52ab701c": {
+        "id": "a520a6f8-1255-480a-85dc-669d52ab701c",
+        "created_at": "2023-08-16T10:11:27.466532",
+        "updated_at": "2023-08-16T10:11:27.466592",
+        "name": "Sumec",
+        "__class__": "Manufacturer"
+    },
+    "Manufacturer.6221a3a6-a090-4e4f-a6bb-9bdcf1c7b685": {
+        "id": "6221a3a6-a090-4e4f-a6bb-9bdcf1c7b685",
+        "created_at": "2023-08-16T10:11:27.470811",
+        "updated_at": "2023-08-16T10:11:27.470873",
+        "name": "Elepaq",
+        "__class__": "Manufacturer"
+    },
+    "Generator.232c304a-44fe-4a02-9636-386604ad4ebd": {
+        "id": "232c304a-44fe-4a02-9636-386604ad4ebd",
+        "created_at": "2023-08-16T10:29:07.381816",
+        "updated_at": "2023-08-16T10:29:07.381824",
+        "\"name\"": "Sumec Keyless",
+        "__class__": "Generator"
+    },
+    "Part.ac859611-37fc-4e01-9226-56449e3c7071": {
+        "id": "ac859611-37fc-4e01-9226-56449e3c7071",
+        "created_at": "2023-08-16T10:29:58.071446",
+        "updated_at": "2023-08-16T10:29:58.071504",
+        "name": "Sumec Firman Engine Oil- 1 Liter",
+        "__class__": "Part"
+    },
+    "Manufacturer.03de629f-3737-47a1-bb53-eeeb9d10a578": {
+        "id": "03de629f-3737-47a1-bb53-eeeb9d10a578",
+        "created_at": "2023-08-16T12:02:26.041469",
+        "updated_at": "2023-08-16T12:02:26.041512",
+        "name": "Honda",
+        "__class__": "Manufacturer"
+    },
+    "Generator.ccfd82e7-09db-4590-ba69-c29138bf73d6": {
+        "id": "ccfd82e7-09db-4590-ba69-c29138bf73d6",
+        "created_at": "2023-08-16T12:27:43.526618",
+        "updated_at": "2023-08-16T12:27:43.526674",
+        "__class__": "Generator",
+        "\"name\"": "Sumec Keyless"
+    }
+}
