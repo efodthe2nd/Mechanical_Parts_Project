@@ -1,1 +1,1 @@
-This is a project on a mechanical parts
+This is a readme file.

@@ -1,0 +1,17 @@
+@import './config';
+@import './header';
+@import './footer';
+@import './filters';
+
+body {
+    background-color: #f7f7f7;
+    color: $primary-color;
+    height: 100vh;
+    line-height: 1;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 30px auto 30px auto;
+    position: relative;
+}
