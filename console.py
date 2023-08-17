@@ -1,6 +1,8 @@
 #!/usr/bin/python3
 """This is the console module"""
 import cmd
+import os
+import readline
 import json
 from models.base_model import BaseModel
 from models.manufacturer import Manufacturer
@@ -8,12 +10,24 @@ from models.generator import Generator
 from models.part import Part
 from models import storage
 
+
+def complete(text, state):
+  options = ['Manufacturer', 'Generator', 'Part', 'create']
+  matches = [cmd for cmd in options if cmd.startswith(text)]
+  if state < len(matches):
+    return matches[state]
+  return None
+
+
 class PartCommand(cmd.Cmd):
   """This model represents our console."""
 
   prompt: str = "(efod) "
   file = None
-  class_name = ['BaseModel', 'Manufacturer', 'Generator', 'Part']
+  class_name = {
+    'BaseModel': BaseModel, 'Manufacturer': Manufacturer,
+    'Generator': Generator, 'Part': Part
+  }
 
   def parse_input(self, cmd):
     """Parse string pass to it."""
@@ -32,7 +46,7 @@ class PartCommand(cmd.Cmd):
       'count': self.count,
       'show': self.do_show,
       'destroy': self.do_destroy,
-      'update': self.get_update
+      'update': self.get_update,
     }
     arg = self.parse_input(line).split()
 
@@ -45,6 +59,8 @@ class PartCommand(cmd.Cmd):
     else:
       return super().default(line)
 
+  def do_clear(self, arg):
+    return os.system('cls' if os.name == 'nt' else 'clear') 
 
   def do_quit(self, line):
     """Type quit to exit the program."""
@@ -56,14 +72,26 @@ class PartCommand(cmd.Cmd):
 
   def do_create(self, line):
     """Create an available model and save it"""
-    if not line:
+    try:
+      model, *line = line.split()
+      args = {}
+      for value in line:
+        key = value[:value.find('=')]
+        val = value[value.find('=') + 1:].replace(
+                               '"', '').replace('_', ' ')
+        args[key] = val
+    except Exception:
+      model = args
+    if not model:
       print('** class name missing **')
-    elif line not in self.class_name:
+    elif model not in self.class_name:
       print("** class doesn't exist **")
+    if type(args) is dict:
+      new_instance = self.class_name[model](**args)
     else:
-      base = eval(f'{line}()')
-      base.save()
-      print(base.id)
+      new_instance = eval(f'{self.class_name[model]}()')
+    new_instance.save()
+    print(new_instance.id)
 
   def do_show(self, line):
     """Retrieves the instance from storage engine"""
@@ -252,4 +280,7 @@ class PartCommand(cmd.Cmd):
   
 
 if __name__ == '__main__':
+  readline.parse_and_bind("tab: complete")
+  readline.set_completer(complete)
+
   PartCommand().cmdloop()

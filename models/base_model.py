@@ -3,7 +3,12 @@
 """The base class for project"""
 import uuid
 from datetime import datetime
-import models
+from sqlalchemy.ext.declarative import declarative_base
+from sqlalchemy import Column, String, DATETIME
+from models import storage_type
+
+Base = declarative_base()
+
 
 class BaseModel:
   """This class implements common attributes for other models"""
@@ -12,19 +17,27 @@ class BaseModel:
     """Initializing the instances"""
     if kwargs:
       attr = kwargs.copy()
-      del attr['__class__']
-      str_c_at = attr['created_at']
-      attr['created_at'] = datetime.strptime(str_c_at, '%Y-%m-%dT%H:%M:%S.%f')
-      str_u_at = attr['updated_at']
-      attr['updated_at'] = datetime.strptime(str_u_at, '%Y-%m-%dT%H:%M:%S.%f')
+      if 'created_at' in attr:
+        del attr['__class__']
+        str_c_at = attr['created_at']
+        attr['created_at'] = datetime.strptime(str_c_at, '%Y-%m-%dT%H:%M:%S.%f')
+        str_u_at = attr['updated_at']
+        attr['updated_at'] = datetime.strptime(str_u_at, '%Y-%m-%dT%H:%M:%S.%f')
+
+      else:
+        self.id = str(uuid.uuid4())
+        self.created_at = datetime.now()
+        self.updated_at = datetime.now()
 
       for key in attr:
         setattr(self, key, attr[key])
+
     else:
       self.id = str(uuid.uuid4())
       self.created_at = datetime.today()
       self.updated_at = datetime.today()
-      models.storage.new(self)
+    
+    models.storage.new(self)
 
   def __str__(self):
     """Return the string representation of the BaseModel class"""

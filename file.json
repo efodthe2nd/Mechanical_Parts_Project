@@ -1,68 +1,73 @@
 {
-    "BaseModel.3bb57a49-ed31-4994-875f-c43129cf2974": {
-        "id": "3bb57a49-ed31-4994-875f-c43129cf2974",
-        "created_at": "2023-08-16T01:45:36.876019",
-        "updated_at": "2023-08-16T01:45:36.876096",
-        "name": "My_Second_Model",
-        "my_number": 99,
-        "__class__": "BaseModel"
-    },
-    "BaseModel.3c28c817-c762-4ea3-8f83-4480f332498d": {
-        "id": "3c28c817-c762-4ea3-8f83-4480f332498d",
-        "created_at": "2023-08-16T01:46:43.315252",
-        "updated_at": "2023-08-16T01:46:43.315280",
-        "name": "My_Second_Model",
-        "my_number": 99,
-        "__class__": "BaseModel"
-    },
-    "BaseModel.10eaebed-0cec-49f9-b1f3-510b045b620d": {
-        "id": "10eaebed-0cec-49f9-b1f3-510b045b620d",
-        "created_at": "2023-08-16T01:47:42.055842",
-        "updated_at": "2023-08-16T01:47:42.056125",
-        "name": "My_Third_Model",
-        "my_number": 100,
-        "__class__": "BaseModel"
-    },
-    "Manufacturer.a520a6f8-1255-480a-85dc-669d52ab701c": {
-        "id": "a520a6f8-1255-480a-85dc-669d52ab701c",
-        "created_at": "2023-08-16T10:11:27.466532",
-        "updated_at": "2023-08-16T10:11:27.466592",
-        "name": "Sumec",
+    "Manufacturer.1eb5ac09-d6ca-43c8-af48-dafad354ec96": {
+        "id": "1eb5ac09-d6ca-43c8-af48-dafad354ec96",
+        "created_at": "2023-08-17T11:03:51.629055",
+        "updated_at": "2023-08-17T11:03:51.629068",
         "__class__": "Manufacturer"
     },
-    "Manufacturer.6221a3a6-a090-4e4f-a6bb-9bdcf1c7b685": {
-        "id": "6221a3a6-a090-4e4f-a6bb-9bdcf1c7b685",
-        "created_at": "2023-08-16T10:11:27.470811",
-        "updated_at": "2023-08-16T10:11:27.470873",
-        "name": "Elepaq",
+    "Manufacturer.02d2872a-16c7-4a61-a783-54b62e48f5c1": {
+        "id": "02d2872a-16c7-4a61-a783-54b62e48f5c1",
+        "created_at": "2023-08-17T11:04:05.902494",
+        "updated_at": "2023-08-17T11:04:05.902543",
         "__class__": "Manufacturer"
     },
-    "Generator.232c304a-44fe-4a02-9636-386604ad4ebd": {
-        "id": "232c304a-44fe-4a02-9636-386604ad4ebd",
-        "created_at": "2023-08-16T10:29:07.381816",
-        "updated_at": "2023-08-16T10:29:07.381824",
-        "\"name\"": "Sumec Keyless",
+    "Generator.fa45ad6a-2a50-41a4-8826-5a60bc2e9648": {
+        "id": "fa45ad6a-2a50-41a4-8826-5a60bc2e9648",
+        "created_at": "2023-08-17T11:08:19.655132",
+        "updated_at": "2023-08-17T11:08:19.655185",
+        "\"name\"": "Honda",
         "__class__": "Generator"
     },
-    "Part.ac859611-37fc-4e01-9226-56449e3c7071": {
-        "id": "ac859611-37fc-4e01-9226-56449e3c7071",
-        "created_at": "2023-08-16T10:29:58.071446",
-        "updated_at": "2023-08-16T10:29:58.071504",
-        "name": "Sumec Firman Engine Oil- 1 Liter",
+    "Part.ffc2beeb-daeb-44a7-9bf2-6c2a47f69d6c": {
+        "id": "ffc2beeb-daeb-44a7-9bf2-6c2a47f69d6c",
+        "created_at": "2023-08-17T13:14:07.811051",
+        "updated_at": "2023-08-17T13:14:07.811090",
+        "name": "Piston",
         "__class__": "Part"
     },
-    "Manufacturer.03de629f-3737-47a1-bb53-eeeb9d10a578": {
-        "id": "03de629f-3737-47a1-bb53-eeeb9d10a578",
-        "created_at": "2023-08-16T12:02:26.041469",
-        "updated_at": "2023-08-16T12:02:26.041512",
-        "name": "Honda",
+    "Part.c1d1974d-67ae-4a7e-81e4-180df830e666": {
+        "id": "c1d1974d-67ae-4a7e-81e4-180df830e666",
+        "created_at": "2023-08-17T13:20:48.315525",
+        "updated_at": "2023-08-17T13:20:48.315571",
+        "name": "Engine top",
+        "generator_id": "1",
+        "price": "N9500",
+        "__class__": "Part"
+    },
+    "Generator.cc89544d-e290-443c-ba3f-8b4563be724f": {
+        "id": "cc89544d-e290-443c-ba3f-8b4563be724f",
+        "created_at": "2023-08-17T14:00:55.780869",
+        "updated_at": "2023-08-17T14:00:55.780923",
+        "name": "Sumec firman keyless start",
+        "__class__": "Generator"
+    },
+    "Generator.dbbdc84e-4089-4d8e-8c53-ede922e16574": {
+        "id": "dbbdc84e-4089-4d8e-8c53-ede922e16574",
+        "created_at": "2023-08-17T14:01:37.436589",
+        "updated_at": "2023-08-17T14:01:37.436824",
+        "name": "Elepaq",
+        "3500v": "3500v",
+        "__class__": "Generator"
+    },
+    "Manufacturer.86c510b1-b739-41d7-b2fa-021d35661225": {
+        "id": "86c510b1-b739-41d7-b2fa-021d35661225",
+        "created_at": "2023-08-17T14:03:10.027095",
+        "updated_at": "2023-08-17T14:03:10.027137",
+        "name": "Efod Industries",
         "__class__": "Manufacturer"
     },
-    "Generator.ccfd82e7-09db-4590-ba69-c29138bf73d6": {
-        "id": "ccfd82e7-09db-4590-ba69-c29138bf73d6",
-        "created_at": "2023-08-16T12:27:43.526618",
-        "updated_at": "2023-08-16T12:27:43.526674",
-        "__class__": "Generator",
-        "\"name\"": "Sumec Keyless"
+    "Part.945c239d-e1f6-4ac7-b6d5-b067261d43b5": {
+        "id": "945c239d-e1f6-4ac7-b6d5-b067261d43b5",
+        "created_at": "2023-08-17T14:16:04.727470",
+        "updated_at": "2023-08-17T14:16:04.727479",
+        "name": "Valve Plate",
+        "__class__": "Part"
+    },
+    "Part.a4686215-dd23-4d89-b543-c98b1f908e86": {
+        "id": "a4686215-dd23-4d89-b543-c98b1f908e86",
+        "created_at": "2023-08-17T14:18:01.746758",
+        "updated_at": "2023-08-17T14:18:01.746767",
+        "name": "Valve Plate",
+        "__class__": "Part"
     }
 }
