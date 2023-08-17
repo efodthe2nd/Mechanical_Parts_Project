@@ -73,7 +73,6 @@ footer p {
 .filters .manufacturers:hover .popover, .filters .generators:hover .popover {
   visibility: visible;
   z-index: 1001;
-  background-color: red;
 }
 .filters .manufacturers .popover, .filters .generators .popover {
   position: absolute;
