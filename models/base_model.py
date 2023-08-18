@@ -65,7 +65,17 @@ class BaseModel:
 
   def __str__(self):
     """Return the string representation of the BaseModel class"""
-    return f"[{self.__class__.__name__}] ({self.id}) {self.__dict__}"
+    cls = type(self).__name__
+    obj_members = self.__dict__.copy()
+    if '_sa_instance_state' in obj_members:
+      del obj_members['_sa_instance_state']
+    return '[{}] ({}) {{\'name\': \'{}\', \'id\': \'{}\', {}}}'.format(
+		  cls,
+			self.id,
+			obj_members['name'],
+ 			obj_members['id'],
+			', '.join("'{}': {}".format(key, value) for key, value in obj_members.items()
+			if key not in ['name', 'id']))
 
   def save(self):
     """Updates the public instance attributes updated_at """

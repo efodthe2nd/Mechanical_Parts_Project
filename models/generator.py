@@ -27,7 +27,7 @@ class Generator(BaseModel, Base):
     name = Column(String(128), nullable=False)
     manufacturer_id = Column(String(60), ForeignKey('manufacturers.id'), nullable=False)
     partids = []
-    parts = relationship(Part, secondary='generator_part', viewonly=False)
+    parts = relationship(Part, secondary='generator_part', viewonly=False, overlaps="generator_parts, generators")
 
   else:
     name = ""

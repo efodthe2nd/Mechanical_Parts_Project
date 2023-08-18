@@ -13,7 +13,8 @@ class Part(BaseModel, Base):
     price = Column(String(60), nullable=False)
     generator_parts = relationship('Generator', 
                                    secondary="generator_part",
-                                   backref='generators')
+                                   backref='generators',
+                                   overlaps="generator_parts, generators")
 
   else:
     name = ""

@@ -1,108 +1,32 @@
 {
-    "Manufacturer.1eb5ac09-d6ca-43c8-af48-dafad354ec96": {
-        "id": "1eb5ac09-d6ca-43c8-af48-dafad354ec96",
-        "created_at": "2023-08-17T11:03:51.629055",
-        "updated_at": "2023-08-17T11:03:51.629068",
-        "__class__": "Manufacturer"
-    },
-    "Manufacturer.02d2872a-16c7-4a61-a783-54b62e48f5c1": {
-        "id": "02d2872a-16c7-4a61-a783-54b62e48f5c1",
-        "created_at": "2023-08-17T11:04:05.902494",
-        "updated_at": "2023-08-17T11:04:05.902543",
-        "__class__": "Manufacturer"
-    },
-    "Generator.fa45ad6a-2a50-41a4-8826-5a60bc2e9648": {
-        "id": "fa45ad6a-2a50-41a4-8826-5a60bc2e9648",
-        "created_at": "2023-08-17T11:08:19.655132",
-        "updated_at": "2023-08-17T11:08:19.655185",
-        "\"name\"": "Honda",
+    "Generator.38656915-3666-48fd-b216-e8996e165616": {
+        "id": "38656915-3666-48fd-b216-e8996e165616",
+        "created_at": "2023-08-18T14:37:53.256252",
+        "updated_at": "2023-08-18T14:37:53.256471",
+        "name": "Friday",
         "__class__": "Generator"
     },
-    "Part.ffc2beeb-daeb-44a7-9bf2-6c2a47f69d6c": {
-        "id": "ffc2beeb-daeb-44a7-9bf2-6c2a47f69d6c",
-        "created_at": "2023-08-17T13:14:07.811051",
-        "updated_at": "2023-08-17T13:14:07.811090",
-        "name": "Piston",
-        "__class__": "Part"
-    },
-    "Part.c1d1974d-67ae-4a7e-81e4-180df830e666": {
-        "id": "c1d1974d-67ae-4a7e-81e4-180df830e666",
-        "created_at": "2023-08-17T13:20:48.315525",
-        "updated_at": "2023-08-17T13:20:48.315571",
-        "name": "Engine top",
-        "generator_id": "1",
-        "price": "N9500",
-        "__class__": "Part"
-    },
-    "Generator.cc89544d-e290-443c-ba3f-8b4563be724f": {
-        "id": "cc89544d-e290-443c-ba3f-8b4563be724f",
-        "created_at": "2023-08-17T14:00:55.780869",
-        "updated_at": "2023-08-17T14:00:55.780923",
-        "name": "Sumec firman keyless start",
+    "Generator.5adab845-8542-4c8e-abf2-5ea7ce7893a4": {
+        "id": "5adab845-8542-4c8e-abf2-5ea7ce7893a4",
+        "created_at": "2023-08-18T14:37:53.257368",
+        "updated_at": "2023-08-18T14:37:53.257611",
+        "name": "Saturday",
         "__class__": "Generator"
     },
-    "Generator.dbbdc84e-4089-4d8e-8c53-ede922e16574": {
-        "id": "dbbdc84e-4089-4d8e-8c53-ede922e16574",
-        "created_at": "2023-08-17T14:01:37.436589",
-        "updated_at": "2023-08-17T14:01:37.436824",
-        "name": "Elepaq",
-        "3500v": "3500v",
-        "__class__": "Generator"
-    },
-    "Manufacturer.86c510b1-b739-41d7-b2fa-021d35661225": {
-        "id": "86c510b1-b739-41d7-b2fa-021d35661225",
-        "created_at": "2023-08-17T14:03:10.027095",
-        "updated_at": "2023-08-17T14:03:10.027137",
-        "name": "Efod Industries",
-        "__class__": "Manufacturer"
-    },
-    "Part.945c239d-e1f6-4ac7-b6d5-b067261d43b5": {
-        "id": "945c239d-e1f6-4ac7-b6d5-b067261d43b5",
-        "created_at": "2023-08-17T14:16:04.727470",
-        "updated_at": "2023-08-17T14:16:04.727479",
-        "name": "Valve Plate",
+    "Part.cf330f53-04e9-4632-84c4-ab05dad976a5": {
+        "id": "cf330f53-04e9-4632-84c4-ab05dad976a5",
+        "created_at": "2023-08-18T14:37:53.259306",
+        "updated_at": "2023-08-18T14:37:53.259798",
+        "generator_id": "38656915-3666-48fd-b216-e8996e165616",
+        "name": "wire",
         "__class__": "Part"
     },
-    "Part.a4686215-dd23-4d89-b543-c98b1f908e86": {
-        "id": "a4686215-dd23-4d89-b543-c98b1f908e86",
-        "created_at": "2023-08-17T14:18:01.746758",
-        "updated_at": "2023-08-17T14:18:01.746767",
-        "name": "Valve Plate",
-        "__class__": "Part"
-    },
-    "Part.3925f4a8-ecdd-43a1-a62f-bb2a60e03868": {
-        "id": "3925f4a8-ecdd-43a1-a62f-bb2a60e03868",
-        "created_at": "2023-08-17T16:23:06.860284",
-        "updated_at": "2023-08-17T16:23:06.860325",
-        "name": "oil filter",
-        "__class__": "Part"
-    },
-    "Part.b17d9b47-5ff7-48c6-b49b-e3eebb383a4d": {
-        "id": "b17d9b47-5ff7-48c6-b49b-e3eebb383a4d",
-        "created_at": "2023-08-17T16:33:32.183675",
-        "updated_at": "2023-08-17T16:33:32.183703",
-        "name": "spark plug",
-        "__class__": "Part"
-    },
-    "Part.f93fb3ae-6341-4f8a-9b2f-85b92df85232": {
-        "id": "f93fb3ae-6341-4f8a-9b2f-85b92df85232",
-        "created_at": "2023-08-17T16:37:23.452307",
-        "updated_at": "2023-08-17T16:37:23.452368",
-        "name": "spark plug",
-        "__class__": "Part"
-    },
-    "Part.dfea4d93-b482-4a3e-9a29-e750484675de": {
-        "id": "dfea4d93-b482-4a3e-9a29-e750484675de",
-        "created_at": "2023-08-17T16:42:30.222192",
-        "updated_at": "2023-08-17T16:42:30.222226",
-        "name": "hose",
-        "__class__": "Part"
-    },
-    "Part.676c93c0-bbb7-46a5-9571-20707b8ed054": {
-        "id": "676c93c0-bbb7-46a5-9571-20707b8ed054",
-        "created_at": "2023-08-17T16:46:59.212414",
-        "updated_at": "2023-08-17T16:46:59.212443",
-        "name": "hose pipe",
+    "Part.d23d6237-1969-4225-9c14-059139497bb5": {
+        "id": "d23d6237-1969-4225-9c14-059139497bb5",
+        "created_at": "2023-08-18T14:37:53.261881",
+        "updated_at": "2023-08-18T14:37:53.262453",
+        "generator_id": "38656915-3666-48fd-b216-e8996e165616",
+        "name": "wire frame",
         "__class__": "Part"
     }
 }
