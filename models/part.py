@@ -11,10 +11,10 @@ class Part(BaseModel, Base):
   if storage_type == 'db':
     name = Column(String(128), nullable=False)
     price = Column(String(60), nullable=False)
-    generator_id = Column(String(60), ForeignKey('generators.id'), nullable=False)
-  
+    generator_parts = relationship('Generator', 
+                                   secondary="generator_part",
+                                   backref='generators')
+
   else:
-    generator_id = ""
     name = ""
     price = ""
-    generator_id = ""

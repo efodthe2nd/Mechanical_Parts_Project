@@ -15,3 +15,17 @@ class Manufacturer(BaseModel, Base):
                               cascade='all, delete, delete-orphan')
   else:
     name: str = ""
+
+    @property
+    def generators(self):
+      '''returns the list of Generator instances with Manufacturer_id
+         equals the current Generator.id
+         FileStorage relationship between Manufacturer and Generator
+      '''
+      from models import storage
+      related_generators = []
+      generators = storage.all(Generator)
+      for generator in generators.values():
+        if generator.manufacturer_id == self.id:
+          related_generators.append(generator)
+      return related_generators
