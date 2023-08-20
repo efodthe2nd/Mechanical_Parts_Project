@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <title>Mech</title>
+    </head>
+    <body>
+        <h1>Generators</h1>
+        <ul>
+            {% for generator in generators.value()| sort(attribute='name') %}
+            <li>{{ generator['id'] }}: <b>{{ state['name'] }}</b></li>
+            {% endfor %}
+        </ul>
+    </body>
+</html>
