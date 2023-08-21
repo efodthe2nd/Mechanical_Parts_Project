@@ -6,7 +6,7 @@
     <body>
         <h1>Generators</h1>
         <ul>
-            {% for generator in generators.value() %}
+            {% for generator in generators %}
             <li>{{ generator.id }}: <b>{{ generator.name }}</b></li>
             {% endfor %}
         </ul>

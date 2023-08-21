@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <body>
+    {% if id == None %}
+    <h1> Generators</h1>
+    <ul>
+      {% for generator in generators %}
+      <li>{{ generator.id }}: <b>{{ generator.name }} </b></li>
+      {% endfor %}
+    </ul>
+    {% else %}
+      {% if len == 0 %}
+      <h1>Not found! </h1>
+      {% else %}
+      <h1>Generator: {{ generators[0].name }}</h1>
+      <h3>Parts: </h3>
+      <ul>
+        {% for part in generators[0].parts %}
+        <li>{{ part.id }}: <b>{{ part.name }}</b>
+        {% endfor %}
+      </ul>
+      {% endif %}
+    {% endif %}
+  </body>
+</html>

@@ -16,9 +16,10 @@ def close_session(exception=None):
     storage.close()
 
 @app.route('/generator_lists', strict_slashes=False)
-def list_state():
-    """Render list of all states."""
-    generators = sorted(list(storage.all("Generator").values()), key=lambda x: x.name)
+def list_generator():
+    """Render list of all generators."""
+    generators = list(storage.all(Generator).values())
+    generators.sort(key=lambda x: x.name)
     return render_template('generator_list.html', generators=generators)
 
 if __name__ == '__main__':

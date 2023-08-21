@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+  <body>
+    <h1>Gens </h1>
+    <ul>
+      {% for gen in gens %}
+      <li>{{ gen.id }}: <b> {{ gen.name }}</b>
+        <ul>
+          {% for part in gen.parts %}
+          <li>{{ part.id }}: <b>{{ part.name }}</b> </li>
+          {% endfor %}
+        <ul>
+      </li>
+      {% endfor %}
+    </ul>
+  </body>
+</html>
