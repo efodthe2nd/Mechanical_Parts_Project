@@ -3,6 +3,7 @@
 Flask module to run the web application and render
 on /state_list.
 """
+from models import *
 from models import storage
 from models.generator import Generator
 from flask import Flask, render_template
@@ -17,8 +18,8 @@ def close_session(exception=None):
 @app.route('/generator_lists', strict_slashes=False)
 def list_state():
     """Render list of all states."""
-    generator_list = storage.all(Generator)
-    return render_template('generator_list.html', generators=generator_list)
+    generators = sorted(list(storage.all("Generator").values()), key=lambda x: x.name)
+    return render_template('generator_list.html', generators=generators)
 
 if __name__ == '__main__':
     app.run(debug=True)
